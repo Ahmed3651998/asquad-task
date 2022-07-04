@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+//import React, { Component } from "react";
 import HText from "../components/HText";
 import WebButton from "../components/WebButton";
 import Header from "../components/Header";

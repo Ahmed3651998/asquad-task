@@ -7,7 +7,7 @@ function WSelect({ label}) {
       <label class="text-gray-500">
         {label} 
       </label>
-      <select class="bg-transparent" >
+      <select class="bg-transparent border-white" >
         <option value="All">All</option>
       </select>
     </div>);

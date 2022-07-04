@@ -1,5 +1,6 @@
 import React from "react";
 import HText from "./HText";
+import { Link } from "react-router-dom";
 
 function Studies({ classs, src, sub, heading, desc }) {
 
@@ -11,10 +12,12 @@ function Studies({ classs, src, sub, heading, desc }) {
         <HText classs="font-bold text-xl">{heading}</HText>
         <HText classs="text-gray-600 text-md">{desc}</HText>
         <div class="grid grid-flow-col  w-28">
-          <a 
-            class="underline text-cyan-800"
-            href="h">Read story
-          </a>
+          
+          <Link 
+            class="underline text-cyan-800" 
+            to="/CaseStudiesInner"
+            >Read story
+          </Link>
 
           <svg class="place-self-center" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.16678 4H12.8334" stroke="#0E7490" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />

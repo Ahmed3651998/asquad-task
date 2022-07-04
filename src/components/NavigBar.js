@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link"
 import { Transition } from "@headlessui/react";
+
 
 
 function NavigBar() {
@@ -25,7 +27,7 @@ function NavigBar() {
                         <Link to="/CaseStudies">Case Studies</Link>
                       </li>
                       <li>
-                        <Link to="/CaseStudiesInner">FAQ</Link>
+                      <Link to="/Pricing#faqanchor">FAQ</Link>
                       </li>
                     </ul>
                   </nav>
@@ -126,7 +128,7 @@ function NavigBar() {
                       <Link to="/CaseStudies">Case Studies</Link>
                     </li>
                     <li class="my-2">
-                      <Link to="/CaseStudiesInner">FAQ</Link>
+                      <Link to="/Pricing#faqanchor">FAQ</Link>
                     </li>
                   </ul>
                 </nav>

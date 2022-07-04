@@ -406,7 +406,7 @@ class Pricing extends Component {
             </div>
           </div>
 
-          <div class=" p-14  grid grid-flow-row place-content-center   bg-gray-50">
+          <div id="faqanchor" class=" p-14  grid grid-flow-row place-content-center   bg-gray-50">
             <HText classs=" mb-16 font-extrabold  text-center text-5xl ">
               Frequently asked questions
             </HText>
