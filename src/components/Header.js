@@ -6,7 +6,8 @@ import HText from "./HText";
 
 function Header() {
   return (
-    <div class="place-content-center grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-36">
+
+    <div class="mx-auto items-start container flex justify-between">
       <div class="place-self-center block">
         <svg
           width="74"
@@ -22,15 +23,16 @@ function Header() {
         </svg>
         <HText classs="mt-2 font-extrabold text-1xl">WEBBER</HText>
       </div>
-      <div class="place-self-center  items-center md:mb-14">
+      <div class="place-self-center items-center">
         <NavigBar></NavigBar>
       </div>
-      <div class=" lg:mb-0 ">
-        <WebButton class="hidden md:grid mt-4 px-4 py-2 rounded-sm text-center float-right  bg-cyan-100 text-cyan-800  ">
+      <div class="hidden md:block place-self-center">
+        <WebButton class="px-4 py-2 rounded-sm text-center float-right  bg-cyan-100 text-cyan-800  ">
           Sign In
         </WebButton>
       </div>
     </div>
+
   );
 }
 

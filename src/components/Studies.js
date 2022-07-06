@@ -1,6 +1,6 @@
 import React from "react";
 import HText from "./HText";
-import { Link } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link"
 
 function Studies({ classs, src, sub, heading, desc }) {
 
@@ -15,7 +15,7 @@ function Studies({ classs, src, sub, heading, desc }) {
           
           <Link 
             class="underline text-cyan-800" 
-            to="/CaseStudiesInner"
+            to="/CaseStudiesInner#casestudyinner"
             >Read story
           </Link>
 

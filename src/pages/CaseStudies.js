@@ -7,12 +7,12 @@ import Studies from "../components/Studies";
 class CaseStudies extends Component {
   render() {
     return (
-      <div>
+      <div class="mx-auto container w-full">
         <div class=" bg-gradient-to-b from place-content-center  bg-blue-10 to bg-white h-xxl">
           <div class="  items-center place-content-center   px-16 py-7  ">
             <Header></Header>
             <div class="grid grid-flow-row place-content-center text-center gap-6 ">
-              <HText classs="  font-extrabold text-center text-4xl md:text-7xl">
+              <HText classs=" mt-10 mb-16 font-extrabold text-center text-4xl md:text-7xl">
                 CASE STUDIES
               </HText>
               <HText classs="mb-8 ">

@@ -2,141 +2,184 @@ import React, { useState } from "react";
 //import { Link } from "react-router-dom";
 import { NavHashLink as Link } from "react-router-hash-link"
 import { Transition } from "@headlessui/react";
-
+import WebButton from "./WebButton";
+//import HText from "./HText";
 
 
 function NavigBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <nav className=" grid place-content-center  grid-flow-col auto-cols-max gap-4">
-        <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex  items-center justify-between h-16">
-            <div className="flex  items-center ">
-              <div className="hidden md:block">
-                <div className="ml-10 grid grid-flow-col place-self-center gap-32 items-baseline ">
-                  <nav class="place-self-center place-content-center">
-                    <ul class="grid grid-flow-col place-content-center gap-8">
-                      <li>
-                        <Link to="/">Overview</Link>
-                      </li>
-                      <li>
-                        <Link to="/Pricing">Pricing</Link>
-                      </li>
-                      <li>
-                        <Link to="/CaseStudies">Case Studies</Link>
-                      </li>
-                      <li>
-                      <Link to="/Pricing#faqanchor">FAQ</Link>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div className=" -ml-2 md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                type="button"
-                className="clear-both items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-300 focus:outline-none  "
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                {!isOpen ? (
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 0 0"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="0"
-                    />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
+    
+    <div class="w-full mx-auto container px-4 block md:px-8 lg:px-16 py-7" id = "navigbar">
+      <div className="flex items-center justify-between w-full">
+
+        <div class="place-self-center md:block">
+          <svg width="74" height="65" viewBox="0 0 74 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M68.4275 4.86251C65.5951 2.02921 61.8254 0.32942 57.8278 0.0830343C53.8304 -0.163352 49.8806 1.06066 46.7221 3.52471C43.838 1.2826 40.2896 
+              0.0651642 36.6371 0.0644561C32.9847 0.063748 29.436 1.27981 26.5509 3.5208C23.2605 0.937403 19.1087 -0.291964 14.9431 0.0836796C10.7775 0.459321 6.9123 
+              2.41165 4.13654 5.54207C1.36078 8.67251 -0.116179 12.745 0.00717962 16.928C0.130539 21.1111 1.84491 25.0894 4.80031 28.0506L14.8934 38.1509C14.9012 38.1585
+              14.909 38.1658 14.9178 38.1737C14.9266 38.1815 14.929 38.1852 14.9347 38.1908C14.9452 38.2013 14.9564 38.2108 14.9669 38.2213C15.1273 38.3802 15.2902 38.5349 15.4555
+              38.6858C15.5405 38.7637 15.6265 38.8393 15.713 38.9153C15.7832 38.9764 15.8537 39.037 15.9245 39.0969C18.8017 41.5361 22.4301 42.9106 26.2003 42.9888C29.9708 43.0673 
+              33.653 41.8451 36.629 39.5274C39.7875 41.9913 43.7373 43.2154 47.7347 42.969C51.7324 42.7226 55.5021 41.0228 58.3344 38.1896L68.4277 28.0906C71.5017 25.008 73.2279 
+              20.8311 73.2279 16.4765C73.2279 12.1219 71.5015 7.94513 68.4275 4.86251ZM36.6339 4.34235C39.0336 4.34081 41.3799 5.05166 43.3755 6.38489C45.3714 7.71813 46.9268 
+              9.61381 47.8454 11.832C48.7639 14.0502 49.0041 16.4913 48.5355 18.8461C48.067 21.201 46.9107 23.3638 45.2131 25.0608L36.6339 33.6447L28.0545 25.0608C26.3569 23.3638 
+              25.2007 21.2009 24.7321 18.8461C24.2635 16.4912 24.5037 14.0501 25.4223 11.8319C26.3408 9.61369 27.8965 7.718 29.8921 6.38479C31.888 5.05159 34.2342 4.34076 36.6339 
+              4.34235ZM14.4075 26.5759C14.4031 24.9809 14.715 23.4011 15.325 21.9276C15.935 20.4541 16.831 19.1164 17.9612 17.9917L20.2447 15.707C20.1341 17.9907 20.5024 20.2723 
+              21.326 22.4051C22.1495 24.5377 23.4101 26.4744 25.0265 28.0906L33.4302 36.4993C31.6176 37.7696 29.4912 38.5178 27.2828 38.6621C25.0746 38.8063 22.869 38.3414 20.9066 
+              37.3177C18.9442 36.2937 17.3004 34.7508 16.1543 32.8564C15.0082 30.9623 14.4038 28.7895 14.407 26.5751L14.4075 26.5759ZM7.82786 25.0205C5.68039 22.8723 4.41618 19.9963
+              4.28497 16.9608C4.15376 13.9253 5.16507 10.9508 7.11914 8.62513C9.07321 6.29941 11.828 4.79153 14.8392 4.39933C17.8504 4.00713 20.8991 4.75917 23.3831 6.50684L14.9332 
+              14.9617C13.4041 16.4833 12.1919 18.2933 11.3666 20.2869C10.5414 22.2805 10.1195 24.418 10.1255 26.5759C10.1255 26.8306 10.1314 27.0843 10.1433 27.3373L7.82786 
+              25.0205ZM46.7277 38.7153C44.2489 38.7212 41.8286 37.9615 39.7973 36.5399L48.2424 28.0906C49.8589 26.4744 51.1192 24.5377 51.9427 22.405C52.7662 20.2723 53.1346 
+              17.9907 53.0242 15.707L55.3076 17.9917C57.0045 19.6896 58.1598 21.8527 58.6278 24.2076C59.0961 26.5624 58.8558 29.0034 57.9372 31.2216C57.0189 33.4399 55.4637 
+              35.3358 53.4686 36.6696C51.4732 38.0035 49.1274 38.7153 46.7277 38.7153ZM65.3999 25.0608L63.1248 27.3373C63.1363 27.0845 63.1422 26.8308 63.1427 26.5759C63.1485
+              24.418 62.7266 22.2805 61.9014 20.2869C61.0762 18.2933 59.8637 16.4833 58.3347 14.9617L49.8906 6.51246C52.379 4.77984 55.4256 4.04218 58.4304 4.4447C61.4353 
+              4.84719 64.1807 6.36072 66.126 8.68725C68.0713 11.0138 69.0756 13.9847 68.9412 17.0151C68.8069 20.0456 67.5436 22.9158 65.3999 25.0608Z" fill="#27272A"
+            />
+            <path d="M8.72403 63L5.19603 53.13H7.85603L10.166 60.27H9.52203L12.098 53.13H13.946L16.27 60.27H15.654L18.146 53.13H20.638L17.096 63H15.024L12.784 56.574H13.106L10.81
+              63H8.72403ZM22.2421 63V53.13H29.3261V55.104H24.7201V56.994H28.9901V58.982H24.7201V61.012H29.3261V63H22.2421ZM31.1776 63V53.13H35.9656C37.0669 53.13 37.9116 53.3587 
+              38.4996 53.816C39.0969 54.2733 39.3956 54.894 39.3956 55.678C39.3956 56.2567 39.2229 56.7513 38.8776 57.162C38.5416 57.5727 38.0796 57.8527 37.4916 
+              58.002V57.778C38.1916 57.8993 38.7283 58.17 39.1016 58.59C39.4843 59.0007 39.6756 59.5373 39.6756 60.2C39.6756 61.068 39.3583 61.754 38.7236 62.258C38.0889 
+              62.7527 37.2209 63 36.1196 63H31.1776ZM33.6556 61.11H35.7836C36.2689 61.11 36.6283 61.0213 36.8616 60.844C37.1043 60.6667 37.2256 60.3913 37.2256 60.018C37.2256 
+              59.6353 37.1043 59.36 36.8616 59.192C36.6283 59.024 36.2689 58.94 35.7836 58.94H33.6556V61.11ZM33.6556 57.05H35.4896C35.9843 57.05 36.3436 56.966 36.5676 
+              56.798C36.8009 56.63 36.9176 56.3733 36.9176 56.028C36.9176 55.6827 36.8009 55.4307 36.5676 55.272C36.3436 55.104 35.9843 55.02 35.4896 55.02H33.6556V57.05ZM41.494 
+              63V53.13H46.282C47.3833 53.13 48.228 53.3587 48.816 53.816C49.4133 54.2733 49.712 54.894 49.712 55.678C49.712 56.2567 49.5393 56.7513 49.194 57.162C48.858 57.5727 
+              48.396 57.8527 47.808 58.002V57.778C48.508 57.8993 49.0447 58.17 49.418 58.59C49.8007 59.0007 49.992 59.5373 49.992 60.2C49.992 61.068 49.6747 61.754 49.04 
+              62.258C48.4053 62.7527 47.5373 63 46.436 63H41.494ZM43.972 61.11H46.1C46.5853 61.11 46.9447 61.0213 47.178 60.844C47.4207 60.6667 47.542 60.3913 47.542 
+              60.018C47.542 59.6353 47.4207 59.36 47.178 59.192C46.9447 59.024 46.5853 58.94 46.1 58.94H43.972V61.11ZM43.972 57.05H45.806C46.3007 57.05 46.66 56.966 
+              46.884 56.798C47.1173 56.63 47.234 56.3733 47.234 56.028C47.234 55.6827 47.1173 55.4307 46.884 55.272C46.66 55.104 46.3007 55.02 45.806 55.02H43.972V57.05ZM51.8104 
+              63V53.13H58.8944V55.104H54.2884V56.994H58.5584V58.982H54.2884V61.012H58.8944V63H51.8104ZM60.746 63V53.13H65.408C66.5466 53.13 67.424 53.4007 68.04 53.942C68.6653 
+              54.4833 68.978 55.2347 68.978 56.196C68.978 56.84 68.838 57.3907 68.558 57.848C68.278 58.296 67.872 58.646 67.34 58.898C66.808 59.1407 66.1733 59.262 65.436 
+              59.262L65.562 58.912H66.262C66.6726 58.912 67.0366 59.024 67.354 59.248C67.6713 59.472 67.9326 59.7847 68.138 60.186L69.636 63H66.808L65.198 59.85C65.0953 
+              59.6447 64.9413 59.5047 64.736 59.43C64.54 59.3553 64.316 59.318 64.064 59.318H63.336V63H60.746ZM63.336 57.484H64.96C65.464 57.484 65.8466 57.386 66.108 
+              57.19C66.3693 56.9847 66.5 56.6813 66.5 56.28C66.5 55.888 66.3693 55.594 66.108 55.398C65.8466 55.202 65.464 55.104 64.96 55.104H63.336V57.484Z" fill="#27272A"
+            />          
+          </svg>
         </div>
 
-        <Transition
-          show={isOpen}
-          enter="transition ease-out duration-100 transform"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="transition ease-in duration-75 transform"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          {(ref) => (
-            <div
-              className="block text-center clear-both md:hidden"
-              id="mobile-menu"
-            >
-              <div
-                ref={ref}
-                className="px-2 pt-2 place-content-center pb-3 space-y-1 sm:px-3"
-              >
-                <nav>
-                  <ul class="-ml-14">
-                  <li class=" clear-both items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-300 "> 
-                  <svg
-                    type="button"
-                    className="-mr-20 h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
+        
+        <div className="grid grid-flow-col hidden md:block place-self-center gap-32 items-baseline ">
+          <nav class="place-self-center place-content-center">
+            <ul class="grid grid-flow-col place-content-center gap-8">
+              <li>
+                <Link to="/NewNav">Overview</Link>
               </li>
-                    <li class="my-2">
-                      <Link to="/">Overview</Link>
-                    </li>
-                    <li class="my-2">
-                      <Link to="/Pricing">Pricing</Link>
-                    </li>
-                    <li class="my-2">
-                      <Link to="/CaseStudies">Case Studies</Link>
-                    </li>
-                    <li class="my-2">
-                      <Link to="/Pricing#faqanchor">FAQ</Link>
-                    </li>
-                  </ul>
-                </nav>
+              <li>
+                <Link to="/Pricing">Pricing</Link>
+              </li>
+              <li>
+                <Link to="/CaseStudies">Case Studies</Link>
+              </li>
+              <li>
+              <Link to="/Pricing#faqanchor">FAQ</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hidden md:block place-self-center">
+          <WebButton class="px-4 py-2 rounded-sm text-center float-right  bg-cyan-100 text-cyan-800  ">
+            Sign In
+          </WebButton>
+        </div>
+        
+        <div className="md:hidden flex justify-end w-full">
+          <div className=" md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="clear-both items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-300 focus:outline-none  "
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {!isOpen ? (
+                
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="3"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+        
+      </div>
+
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div
+            className="block text-center clear-both md:hidden"
+            id="mobile-menu"
+          >
+            <div
+              ref={ref}
+              className="px-2 pt-2 place-content-center pb-3 space-y-1 sm:px-3"
+            >
+              <div>
+                <ul class="">
+                <li class="hidden clear-both items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-300 "> 
+                <svg
+                  type="button"
+                  className="-mr-20 h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="3"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+            </li>
+                  <li class="my-2">
+                    <Link to="/">Overview</Link>
+                  </li>
+                  <li class="my-2">
+                    <Link to="/Pricing">Pricing</Link>
+                  </li>
+                  <li class="my-2">
+                    <Link to="/CaseStudies">Case Studies</Link>
+                  </li>
+                  <li class="my-2">
+                    <Link to="/Pricing#faqanchor">FAQ</Link>
+                  </li>
+                </ul>
               </div>
             </div>
-          )}
-        </Transition>
-      </nav>
+          </div>
+        )}
+      </Transition>
     </div>
   );
 }
