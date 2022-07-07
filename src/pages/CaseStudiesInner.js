@@ -15,7 +15,7 @@ class CaseStudiesInner extends Component {
             <div id="casestudyinner" class="bg-blue-10">
               <div class="mx-auto container w-full">
                   <div class="items-center px-16 py-7 ">
-                      <div class="mt-20 grid md:grid-flow-col md:grid-cols-2 w-full justify-center">
+                      <div class="mt-20 grid md:grid-flow-col md:grid-cols-2 w-full justify-center gap-8">
                           <div class="md:place-self-center grid grid-flow-row">
                               <HText classs="text-gray-600 text-md">Kanban Software</HText>
                               <HText classs="font-extrabold text-4xl">Trello x Webber</HText>
@@ -81,8 +81,8 @@ class CaseStudiesInner extends Component {
                   </div>
 
                   <div class="overflow-x-auto  md:p-4 bg-gray-50">
-                      <HText classs="px-10 mtext-xl font-bold">More case studies</HText>
-                      <div class="grid md:grid-flow-col place-content-center gap-6 ">
+                      <HText classs="px-16 mtext-xl font-bold">More case studies</HText>
+                      <div class="mb-10 grid md:grid-flow-col place-content-center gap-10 ">
                           <Studies src="https://i.postimg.cc/CKcFPp2j/Project-Cover.png" sub="Technology - SaaS" heading="Adobe Systems Inc" desc="Learn how Adobe has leveraged Webber to consolidate it’s diverse range of services software"></Studies>
                           <Studies src="https://i.postimg.cc/NMtzHKDD/Project-Cover.png" sub="Kanban Software" heading="Trello" desc="Learn how Trello has leveraged Webber to consolidate it’s diverse range of services software"></Studies>
                           <Studies src="https://i.postimg.cc/QxgJyjQ9/Project-Cover-1.png" sub="Technology - SaaS" heading="Gutkowski, Schuppe and Pagac" desc="Learn how Adobe has leveraged Webber to consolidate it’s diverse range of services software"></Studies>

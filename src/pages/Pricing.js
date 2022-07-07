@@ -13,8 +13,8 @@ class Pricing extends Component {
         <nav className="w-full mx-auto">
             <NavigBar></NavigBar>
         </nav>
-        <div className="w-full mx-auto container">
-          <div className=" h-auto bg-gradient-to-b from bg-blue-10 to bg-white ">
+        <div className="w-full mx-auto container bg-blue-10">
+          <div className=" h-auto bg-blue-10 ">
             <div className="  items-center mb-20 px-16 py-7  ">            
               <div class="grid grid-flow-row place-content-center text-center gap-6 ">
                 <HText classs=" mt-10 mb-16 font-extrabold text-center text-5xl md:text-7xl">
@@ -411,7 +411,7 @@ class Pricing extends Component {
               </div>
             </div>
 
-            <div id="faqanchor" className=" p-14  grid grid-flow-row place-content-center   bg-gray-50">
+            <div id="faqanchor" className=" p-14  grid grid-flow-row place-content-center   bg-blue-10">
               <HText classs=" mb-16 font-extrabold  text-center text-5xl ">
                 Frequently asked questions
               </HText>
@@ -429,25 +429,25 @@ class Pricing extends Component {
                   <Faq heading="How do I use the webber for 3+ members?"></Faq>
                 </div>
               </div>
-            </div>
-
-            <div className="md:w-full h-auto   p-10 grid md:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
-              <div className=" grid text-white items-center grid-flow-row text-center place-content-center ">
-                <h2 className=" text-5xl place-self-center font-semibold">
-                  Get results, no matter what
-                </h2>
-                <h3 className="mt-6 mb-10">
-                  Start your free trial today, you get all the pro features for 1
-                  month for you <br />
-                  and your team. If you think its not for you can easily
-                  unsubscribe
-                </h3>
-                <WebButton className="font-semibold px-4 py-2 rounded-sm place-self-center  bg-white text-cyan-800">
-                  Start free trial
-                </WebButton>
-              </div>
-            </div>
+            </div>            
           </div>          
+        </div>
+
+        <div className="md:w-full h-auto   p-10 grid md:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
+          <div className=" grid text-white items-center grid-flow-row text-center place-content-center ">
+            <h2 className=" text-5xl place-self-center font-semibold">
+              Get results, no matter what
+            </h2>
+            <h3 className="mt-6 mb-10">
+              Start your free trial today, you get all the pro features for 1
+              month for you <br />
+              and your team. If you think its not for you can easily
+              unsubscribe
+            </h3>
+            <WebButton className="font-semibold px-4 py-2 rounded-sm place-self-center  bg-white text-cyan-800">
+              Start free trial
+            </WebButton>
+          </div>
         </div>
 
         <footer>
