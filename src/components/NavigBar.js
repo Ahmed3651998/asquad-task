@@ -61,7 +61,7 @@ function NavigBar() {
           <nav class="place-self-center place-content-center">
             <ul class="grid grid-flow-col place-content-center gap-8">
               <li>
-                <Link to="/NewNav">Overview</Link>
+                <Link to="/">Overview</Link>
               </li>
               <li>
                 <Link to="/Pricing">Pricing</Link>

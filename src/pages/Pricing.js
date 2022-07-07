@@ -8,8 +8,8 @@ class Pricing extends Component {
   render() {
     return (
       <>
-        <div></div>
-        <nav className="w-full mx-auto container">
+        
+        <nav className="w-full mx-auto">
             <NavigBar></NavigBar>
         </nav>
         <div className="w-full mx-auto container">
