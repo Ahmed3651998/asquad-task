@@ -3,6 +3,7 @@ import HText from "../components/HText";
 import WebButton from "../components/WebButton";
 import Faq from "../components/Faq";
 import NavigBar from "../components/NavigBar";
+import Footer from "../components/Footer";
 
 class Pricing extends Component {
   render() {
@@ -551,6 +552,11 @@ class Pricing extends Component {
             </div>
           </div>
         </div>
+
+        <footer>
+          <Footer></Footer>
+        </footer>
+
       </>      
     );
   }

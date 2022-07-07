@@ -1,6 +1,6 @@
 import React from "react";
 
-function bCards({ heading, parag }) {
+function BCards({ heading, parag }) {
   return (
     <div class=" lg:m-8 m-4  -mt-10 w-auto lg:w-44 md:h-30 place-content-center text-center pt-8 pb-8 p-6 shadow-lg rounded-lg bg-white place-items-center grid grid-flow-row ">
       <h1
@@ -19,4 +19,4 @@ function bCards({ heading, parag }) {
   );
 }
 
-export default bCards;
+export default BCards;

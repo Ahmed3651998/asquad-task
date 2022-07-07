@@ -4,7 +4,9 @@ import WebButton from "../components/WebButton";
 //import Header from "../components/Header";
 import Features from "../components/Features";
 import Cards from "../components/Cards";
+import BCards from "../components/BCards";
 import NavigBar from "../components/NavigBar";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
     return (
@@ -294,10 +296,10 @@ const Homepage = () => {
               </div>
             </div>
             <div class="flex justify-center gap-x-28 items-center w-full md:flex-row flex-col space-y-4">
-              <Cards heading="40+" parag="Happy Clients"></Cards>
-              <Cards heading="540+" parag="Projects Completed"></Cards>
-              <Cards heading="300" parag="Dedicated Members"></Cards>
-              <Cards heading="25+" parag="Awards Won"></Cards>
+              <BCards heading="40+" parag="Happy Clients"></BCards>
+              <BCards heading="540+" parag="Projects Completed"></BCards>
+              <BCards heading="300" parag="Dedicated Members"></BCards>
+              <BCards heading="25+" parag="Awards Won"></BCards>
             </div>
           </div>
           <div class="mt-24 md:mb-20 text-center grid grid-flow-row  h-96">
@@ -310,7 +312,9 @@ const Homepage = () => {
             </WebButton>
           </div>
 
-                 
+          <footer>
+            <Footer></Footer>
+          </footer>       
         </div>
       </>
     );
