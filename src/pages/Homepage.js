@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const Homepage = () => {
     return (
       <>
-        <nav className="w-full mx-auto container">
+        <nav className="w-full mx-auto container bg-blue-10">
           <NavigBar></NavigBar>
         </nav>
         <div class = "bg-blue-10">
@@ -44,8 +44,8 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="lg:mt-20 mx-auto container place-content-center grid grid-flow-row ">
-              <HText classs="text-center font-extrabold place-self-center text-7xl mt-16 mb-20 leading-normal">
+            <div class="lg:mt-20 relative top-32 lg:top-40 mx-auto container place-content-center grid grid-flow-row ">
+              <HText classs="text-center font-extrabold place-self-center text-4xl md:text-7xl relative mb-20 leading-normal">
                 Tailor-made features
               </HText>
               <div class="place-content-center  grid md:grid-flow-column md:grid-cols-3 gap-10 md:gap-0 ">
@@ -204,7 +204,7 @@ const Homepage = () => {
                   laoreet urna purus. Aliquam at est vel auctor rhoncus et. Sit ac
                   enim, malesuada mattis. Dignissim nibh augue posuer
                 </p>
-                <WebButton class=" mt-4 mb-10 md:mb-0 float-left rounded-sm  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
+                <WebButton class=" mt-4 mb-10 px-4 py-2 md:mb-0 float-left rounded-sm  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
                   Learn more
                 </WebButton>
                 <svg
@@ -229,7 +229,7 @@ const Homepage = () => {
             </div>
           </div>
           <div class="mt-20 ">
-            <div class="lg:w-full h-auto  p-10 grid lg:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
+            <div class="w-full h-auto items-center justify-center gap-14 p-10 flex flex-row clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-500">
               <div class="place-self-center sm:mb-0   lg:ml-10  lg:w-9/12 md:p-14 text-white block">
                 <img
                   class="place-self-center ml-3 md:ml-0 md:float-left md:mr-6 w-16 h-16 rounded-full "
@@ -268,11 +268,11 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div class="container mx-auto mt-44  mb-20  place-content-center grid grid-flow-row  h-96">
+          <div class="container mx-auto my-auto place-content-center grid grid-flow-row">
             <HText classs="font-extrabold text-center place-self-center text-3xl md:text-5xl mt-10 mb-20 lg:mb-10 ">
               Brands using our services
             </HText>
-            <div class=" grid place-self-center sm:grid-flow-row mb-40 gap-8 md:gap-10 grid-cols-2 lg:grid-flow-col lg:grid-rows-2">
+            <div class=" grid place-self-center sm:grid-flow-row gap-8 md:gap-10 grid-cols-2 lg:grid-flow-col lg:grid-rows-2">
               <Cards img="https://i.postimg.cc/tC3rNpGk/Group.png"></Cards>
               <Cards img="https://i.postimg.cc/W46fpVXt/Walmart-Logo.png"></Cards>
               <Cards img="https://i.postimg.cc/W31S2kdf/Vector.png"></Cards>
@@ -284,26 +284,30 @@ const Homepage = () => {
             </div>
           </div>        
 
-          <div class="lg:mt-16 mt-40 place-content-center  text-white ">
-            <div class="lg:w-full h-auto  p-10 grid lg:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
-              <div class="h-60  grid grid-flow-row items-center place-content-center ">
-                <h2 class="text-center text-5xl place-self-center font-semibold">
+          <div class="lg:mt-16 mt-40 place-content-center text-white ">
+            <div class="lg:w-full h-auto  p-10 flex flex-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
+              <div class="h-12 md:h-40 grid grid-flow-row items-center place-content-center ">
+                <h2 class="text-center xs:text-xl sm:text-3xl md:text-5xl place-self-center font-semibold">
                   By the numbers
                 </h2>
                 <h3 class="text-center mt-6 ">
                   5 years, consistent quality and you get results. No matter what
                 </h3>
               </div>
-            </div>
-            <div class="flex justify-center gap-x-28 items-center w-full md:flex-row flex-col space-y-4">
-              <BDCards heading="40+" parag="Happy Clients"></BDCards>
-              <BDCards heading="540+" parag="Projects Completed"></BDCards>
-              <BDCards heading="300" parag="Dedicated Members"></BDCards>
-              <BDCards heading="25+" parag="Awards Won"></BDCards>
-            </div>
+              <div class="flex flex-col md:flex-row justify-center gap-10 items-center relative top-24 w-full ">
+                <BDCards heading="40+" parag="Happy Clients"></BDCards>
+                <BDCards heading="540+" parag="Projects Completed"></BDCards>
+                <BDCards heading="300" parag="Dedicated Members"></BDCards>
+                <BDCards heading="25+" parag="Awards Won"></BDCards>
+              </div>   
+            </div> 
+                    
           </div>
-          <div class="mt-24 md:mb-20 text-center grid grid-flow-row  h-96">
-            <HText classs=" font-extrabold place-self-center px-8 text-2xl md:text-5xl md:mb-10 ">
+
+          
+
+          <div class="text-center grid grid-flow-row h-96">
+            <HText classs="mt-16 font-extrabold place-self-center px-8 text-2xl md:text-5xl">
               Build the next big thing and ship to <br />
               market faster
             </HText>
@@ -312,8 +316,8 @@ const Homepage = () => {
             </WebButton>
           </div>               
         </div>
-        <footer>
-            <Footer></Footer>
+        <footer className="bg-[#E4E4E7]">
+          <Footer></Footer>
         </footer>  
       </>
     );

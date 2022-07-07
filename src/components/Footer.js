@@ -3,7 +3,7 @@ import HText from "./HText";
 function Footer(){
     return(
         <div class="w-full flex bg-[#E4E4E7]">
-            <div class="container mx-auto mt-10 mb-10 flex justify-between gap-4 bg-[#E4E4E7]">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8 mt-10 mb-10 flex justify-between gap-10 bg-[#E4E4E7]">
                 <div class="grid grid-flow-row gap-8">
                     <div class="block">
                         <svg width="74" height="43" viewBox="0 0 74 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ function Footer(){
                     </div>
                 </div>
                 <div class="grid lg:grid-flow-col gap-18">
-                    <div class="grid grid-flow-col md:grid-flow-col gap-10 md:gap-20">
+                    <div class="grid grid-flow-row md:grid-flow-col gap-4">
                         <div class="grid grid-flow-row gap-2 md:gap-4 ">
                             <HText classs="text-gray-700 text-xl">Company</HText>
                             <HText classs=" text-gray-500">About us</HText>
@@ -55,7 +55,7 @@ function Footer(){
                             <HText classs=" text-gray-500">Status</HText>
                         </div>
 
-                        <div class=" lg:mt-0 md:mt-5 mt-10 grid grid-flow-row place-content-start gap-4 ">
+                        <div class="grid grid-flow-row place-content-start gap-4 ">
                             <HText classs="text-gray-700 text-xl">Get Updates and more</HText>
                             <div class="grid grid-flow-col place-content-center md:gap-6 ">
                                 <input type="text" class="rounded-md w-full h-2 md:w-auto p-6 md:h-4" placeholder="Your email address"></input>

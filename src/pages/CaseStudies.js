@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 class CaseStudies extends Component {
   render() {
     return (
-
       <>
         <nav class="w-full mx-auto ">
           <NavigBar></NavigBar>
@@ -79,7 +78,6 @@ class CaseStudies extends Component {
         <footer>
           <Footer></Footer>
         </footer>
-
       </>      
     );
   }
