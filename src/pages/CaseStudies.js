@@ -5,6 +5,7 @@ import Studies from "../components/Studies";
 import NavigBar from "../components/NavigBar";
 import Footer from "../components/Footer";
 
+// asfdsfdsf
 class CaseStudies extends Component {
   render() {
     return (
