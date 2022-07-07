@@ -310,12 +310,11 @@ const Homepage = () => {
             <WebButton class="place-self-center rounded-sm px-4 py-2 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
               Download Now
             </WebButton>
-          </div>
-
-          <footer>
-            <Footer></Footer>
-          </footer>       
+          </div>               
         </div>
+        <footer>
+            <Footer></Footer>
+        </footer>  
       </>
     );
 }
