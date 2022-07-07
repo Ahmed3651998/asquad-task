@@ -80,9 +80,7 @@ class CaseStudies extends Component {
           <Footer></Footer>
         </footer>
 
-      </>
-
-      
+      </>      
     );
   }
 }
