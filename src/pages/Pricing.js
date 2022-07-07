@@ -8,12 +8,13 @@ class Pricing extends Component {
   render() {
     return (
       <>
-        <nav class="w-full mx-auto ">
+        <div></div>
+        <nav className="w-full mx-auto container">
             <NavigBar></NavigBar>
         </nav>
-        <div class="mx-auto container w-full ">
-          <div class=" h-auto bg-gradient-to-b from bg-blue-10 to bg-white ">
-            <div class="  items-center mb-20 px-16 py-7  ">            
+        <div className="w-full mx-auto container">
+          <div className=" h-auto bg-gradient-to-b from bg-blue-10 to bg-white ">
+            <div className="  items-center mb-20 px-16 py-7  ">            
               <div class="grid grid-flow-row place-content-center text-center gap-6 ">
                 <HText classs=" mt-10 mb-16 font-extrabold text-center text-5xl md:text-7xl">
                   SIMPLE PRICING
@@ -23,17 +24,17 @@ class Pricing extends Component {
                   Webbber free trial so you’re <br />
                   absolutely sure that it’s the right fit for your frontend team
                 </HText>
-                <div class=" mb-20 gap-2 md:gap-0  md:w-1/3 place-self-center grid grid-flow-col ">
-                  <WebButton class="rounded-sm px-4 py-2 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
+                <div className=" mb-20 gap-2 md:gap-0  md:w-1/3 place-self-center grid grid-flow-col ">
+                  <WebButton className="rounded-sm px-4 py-2 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
                     Monthly
                   </WebButton>
-                  <WebButton class=" rounded-sm px-4 py-2 bg-cyan-100 text-cyan-800">
+                  <WebButton className=" rounded-sm px-4 py-2 bg-cyan-100 text-cyan-800">
                     Yearly
                   </WebButton>
                 </div>
               </div>
-              <div class="grid grid-cols-2 md:grid-flow-col md:grid-cols-4 gap-6 md:gap-6 ">
-                <div class="grid grid-flow-row  gap-4 md:text-lg  -ml-10 md:ml-0 text-sm md:gap-6 ">
+              <div className="grid grid-cols-2 md:grid-flow-col md:grid-cols-4 gap-6 md:gap-6 ">
+                <div className="grid grid-flow-row  gap-4 md:text-lg  -ml-10 md:ml-0 text-sm md:gap-6 ">
                   <HText classs="text-gray-700  "></HText>
                   <HText classs="text-gray-700 h-20 md:h-20"></HText>
                   <HText classs="text-gray-700 ">All limited links</HText>
@@ -47,19 +48,19 @@ class Pricing extends Component {
                   <HText classs=" h-12"></HText>
                 </div>
 
-                <div class="grid place-content-center text-center  grid-flow-row mb-10 md:mb-0 gap-11 md:gap-10 ">
+                <div className="grid place-content-center text-center  grid-flow-row mb-10 md:mb-0 gap-11 md:gap-10 ">
                   <HText classs="text-gray-700 w-32 md:w-auto font-bold text-lg md:text-3xl ">
                     {" "}
                     Starter
                   </HText>
                   <HText classs="font-bold md:text-2xl">
                     $20{" "}
-                    <span class="inline-block">
-                      <p class="text-gray-700 text-sm">/month</p>
+                    <span className="inline-block">
+                      <p className="text-gray-700 text-sm">/month</p>
                     </span>
                   </HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -72,7 +73,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -85,7 +86,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -100,7 +101,7 @@ class Pricing extends Component {
 
                   <HText classs=" text-gray-700">1 user</HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -114,7 +115,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="19"
                     height="19"
                     viewBox="0 0 19 19"
@@ -128,7 +129,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="19"
                     height="19"
                     viewBox="0 0 19 19"
@@ -142,7 +143,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -154,11 +155,11 @@ class Pricing extends Component {
                       fill="#27272A"
                     />
                   </svg>
-                  <button class=" px-2 py-2 place-self-center  font-semibold  md:w-auto md:p-4 text-sm md:text-md  rounded-sm  bg-cyan-100 text-cyan-800">
+                  <button className=" px-2 py-2 place-self-center  font-semibold  md:w-auto md:p-4 text-sm md:text-md  rounded-sm  bg-cyan-100 text-cyan-800">
                     Choose plan
                   </button>
                 </div>
-                <div class="md:hidden grid grid-flow-row gap-4 -ml-10 md:ml-0 text-sm md:text-md md:gap-6 ">
+                <div className="md:hidden grid grid-flow-row gap-4 -ml-10 md:ml-0 text-sm md:text-md md:gap-6 ">
                   <HText classs="text-gray-700  "></HText>
                   <HText classs="text-gray-700 h-24 md:h-20"></HText>
                   <HText classs="text-gray-700 ">All limited links</HText>
@@ -171,19 +172,19 @@ class Pricing extends Component {
                   <HText classs=" text-gray-700">Satisfaction guaranteed</HText>
                   <HText classs=" h-12"></HText>
                 </div>
-                <div class="bg-white w-32 md:w-auto p-2 md:p-4 mb-10 md:mb-0  grid place-content-center text-center grid-flow-row gap-11 md:gap-10 shadow-2xl  ">
+                <div className="bg-white w-32 md:w-auto p-2 md:p-4 mb-10 md:mb-0  grid place-content-center text-center grid-flow-row gap-11 md:gap-10 shadow-2xl  ">
                   <HText classs="text-blue-100 font-bold text-lg md:text-3xl  ">
                     {" "}
                     Pro
                   </HText>
                   <HText classs="font-bold md:text-2xl">
                     $100{" "}
-                    <span class="inline-block">
-                      <p class="text-gray-700 text-sm">/month</p>
+                    <span className="inline-block">
+                      <p className="text-gray-700 text-sm">/month</p>
                     </span>
                   </HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -196,7 +197,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -209,7 +210,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -224,7 +225,7 @@ class Pricing extends Component {
 
                   <HText classs=" text-gray-700">3 user</HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -238,7 +239,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -252,7 +253,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="19"
                     height="19"
                     viewBox="0 0 19 19"
@@ -266,7 +267,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -278,11 +279,11 @@ class Pricing extends Component {
                       fill="#27272A"
                     />
                   </svg>
-                  <button class="overflow-hidden rounded-sm  px-2 py-1 md:p-4 text-sm md:text-md  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
+                  <button className="overflow-hidden rounded-sm  px-2 py-1 md:p-4 text-sm md:text-md  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
                     Choose plan
                   </button>
                 </div>
-                <div class="md:hidden grid grid-flow-row gap-4 -ml-10 md:ml-0 text-sm md:gap-6 ">
+                <div className="md:hidden grid grid-flow-row gap-4 -ml-10 md:ml-0 text-sm md:gap-6 ">
                   <HText classs="text-gray-700  "></HText>
                   <HText classs="text-gray-700 h-20 md:h-20"></HText>
                   <HText classs="text-gray-700 ">All limited links</HText>
@@ -295,19 +296,19 @@ class Pricing extends Component {
                   <HText classs=" text-gray-700">Satisfaction guaranteed</HText>
                   <HText classs=" h-12"></HText>
                 </div>
-                <div class="md:ml-0  grid place-content-center text-center grid-flow-row gap-11 md:gap-10 ">
+                <div className="md:ml-0  grid place-content-center text-center grid-flow-row gap-11 md:gap-10 ">
                   <HText classs="text-gray-700 w-32 md:w-auto  font-bold text-lg md:text-3xl  ">
                     {" "}
                     Enterprise
                   </HText>
                   <HText classs="font-bold md:text-2xl">
                     $200{" "}
-                    <span class="inline-block">
-                      <p class="text-gray-700 text-sm">/month</p>
+                    <span className="inline-block">
+                      <p className="text-gray-700 text-sm">/month</p>
                     </span>
                   </HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -320,7 +321,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -333,7 +334,7 @@ class Pricing extends Component {
                     />
                   </svg>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -348,7 +349,7 @@ class Pricing extends Component {
 
                   <HText classs=" text-gray-700">Unlimited</HText>
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -362,7 +363,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -376,7 +377,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -390,7 +391,7 @@ class Pricing extends Component {
                   </svg>
 
                   <svg
-                    class="place-self-center"
+                    className="place-self-center"
                     width="17"
                     height="15"
                     viewBox="0 0 17 15"
@@ -402,45 +403,45 @@ class Pricing extends Component {
                       fill="#27272A"
                     />
                   </svg>
-                  <button class=" px-2 py-2 place-self-center  font-semibold  md:w-auto md:p-4 text-sm md:text-md  rounded-sm  bg-cyan-100 text-cyan-800">
+                  <button className=" px-2 py-2 place-self-center  font-semibold  md:w-auto md:p-4 text-sm md:text-md  rounded-sm  bg-cyan-100 text-cyan-800">
                     Choose plan
                   </button>
                 </div>
               </div>
             </div>
 
-            <div id="faqanchor" class=" p-14  grid grid-flow-row place-content-center   bg-gray-50">
+            <div id="faqanchor" className=" p-14  grid grid-flow-row place-content-center   bg-gray-50">
               <HText classs=" mb-16 font-extrabold  text-center text-5xl ">
                 Frequently asked questions
               </HText>
-              <div class="md:ml-20 place-content-center p-8   text-center md:text-left gap-6 md:gap-14 grid grid-flow-row grid-rows-3">
-                <div class="place-self-center gap-4 grid md:grid-flow-col md:grid-cols-2">
+              <div className="md:ml-20 place-content-center p-8   text-center md:text-left gap-6 md:gap-14 grid grid-flow-row grid-rows-3">
+                <div className="place-self-center gap-4 grid md:grid-flow-col md:grid-cols-2">
                   <Faq heading="How do I use the webber for 3+ members?"></Faq>
                   <Faq heading="What does early access mean"></Faq>
                 </div>
-                <div class="grid md:grid-flow-col gap-4 md:grid-cols-2">
+                <div className="grid md:grid-flow-col gap-4 md:grid-cols-2">
                   <Faq heading="Whats the best way to make the most out of it?"></Faq>
                   <Faq heading="How are enterprise package customers accomodated?"></Faq>
                 </div>
-                <div class="grid gap-4  md:gap-0 md:mt-0 md:grid-flow-col md:grid-cols-2">
+                <div className="grid gap-4  md:gap-0 md:mt-0 md:grid-flow-col md:grid-cols-2">
                   <Faq heading="How do I use the webber for 3+ members?"></Faq>
                   <Faq heading="How do I use the webber for 3+ members?"></Faq>
                 </div>
               </div>
             </div>
 
-            <div class="md:w-full h-auto   p-10 grid md:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
-              <div class=" grid text-white items-center grid-flow-row text-center place-content-center ">
-                <h2 class=" text-5xl place-self-center font-semibold">
+            <div className="md:w-full h-auto   p-10 grid md:grid-flow-col  clear-both bg-gradient-to-r from-blue-100 via-blue-200 to-blue-50">
+              <div className=" grid text-white items-center grid-flow-row text-center place-content-center ">
+                <h2 className=" text-5xl place-self-center font-semibold">
                   Get results, no matter what
                 </h2>
-                <h3 class="mt-6 mb-10">
+                <h3 className="mt-6 mb-10">
                   Start your free trial today, you get all the pro features for 1
                   month for you <br />
                   and your team. If you think its not for you can easily
                   unsubscribe
                 </h3>
-                <WebButton class="font-semibold px-4 py-2 rounded-sm place-self-center  bg-white text-cyan-800">
+                <WebButton className="font-semibold px-4 py-2 rounded-sm place-self-center  bg-white text-cyan-800">
                   Start free trial
                 </WebButton>
               </div>
@@ -448,11 +449,11 @@ class Pricing extends Component {
           </div>
 
 
-          <div class="w-full flex bg-[#E4E4E7]">
-            <div class="container mx-auto w-full flex justify-between bg-[#E4E4E7]">
-              <footer class="container mx-auto mt-10 mb-10 flex justify-between gap-4 bg-[#E4E4E7]">
-                <div class="grid grid-flow-row gap-8">
-                  <div class="block">
+          <div className="w-full flex bg-[#E4E4E7]">
+            <div className="container mx-auto w-full flex justify-between bg-[#E4E4E7]">
+              <footer className="container mx-auto mt-10 mb-10 flex justify-between gap-4 bg-[#E4E4E7]">
+                <div className="grid grid-flow-row gap-8">
+                  <div className="block">
                     <svg
                       width="74"
                       height="43"
@@ -471,7 +472,7 @@ class Pricing extends Component {
                     <HText classs="text-gray-500">Copyright © 2021 WEBBER.</HText>
                     <HText classs="mt-2 text-gray-500">All rights reserved</HText>
                   </div>
-                  <div class="mb-4 md:mb-0">
+                  <div className="mb-4 md:mb-0">
                     <svg
                       width="80"
                       height="32"
@@ -494,9 +495,9 @@ class Pricing extends Component {
                     </svg>
                   </div>
                 </div>
-                <div class="grid lg:grid-flow-col gap-18">
-                  <div class="grid grid-flow-col md:grid-flow-col gap-10 md:gap-20">
-                    <div class="grid grid-flow-row gap-2 md:gap-4 ">
+                <div className="grid lg:grid-flow-col gap-18">
+                  <div className="grid grid-flow-col md:grid-flow-col gap-10 md:gap-20">
+                    <div className="grid grid-flow-row gap-2 md:gap-4 ">
                       <HText classs="text-gray-700 text-xl">Company</HText>
                       <HText classs=" text-gray-500">About us</HText>
                       <HText classs=" text-gray-500">Blog</HText>
@@ -505,7 +506,7 @@ class Pricing extends Component {
                       <HText classs=" text-gray-500">Testimonials</HText>
                     </div>
 
-                    <div class="grid grid-flow-row gap-2 w-auto md:w-40 ">
+                    <div className="grid grid-flow-row gap-2 w-auto md:w-40 ">
                       <HText classs="text-gray-700 text-xl">Support</HText>
                       <HText classs=" text-gray-500">Help center</HText>
                       <HText classs=" text-gray-500">Terms of service</HText>
@@ -514,15 +515,15 @@ class Pricing extends Component {
                       <HText classs=" text-gray-500">Status</HText>
                     </div>
 
-                    <div class=" lg:mt-0 md:mt-5 mt-10 grid grid-flow-row place-content-start gap-4 ">
+                    <div className=" lg:mt-0 md:mt-5 mt-10 grid grid-flow-row place-content-start gap-4 ">
                     <HText classs="text-gray-700 text-xl">Get Updates and more</HText>
-                    <div class="grid grid-flow-col place-content-center md:gap-6 ">
+                    <div className="grid grid-flow-col place-content-center md:gap-6 ">
                       <input
                         type="text"
                         class="rounded-md w-full h-2 md:w-auto p-6 md:h-4"
                         placeholder="Your email address"
                       ></input>
-                      <button class="place-self-center p-3 rounded-sm  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
+                      <button className="place-self-center p-3 rounded-sm  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-100 text-white ">
                         <i>
                           <svg
                             width="24"
